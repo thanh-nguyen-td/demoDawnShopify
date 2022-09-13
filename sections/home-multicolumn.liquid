@@ -1,0 +1,32 @@
+<div>thanh kaka</div>
+
+{% schema %}
+    {
+        "name":"home_multicolumn",
+        "tag":"section",
+        "blocks":[
+            {
+                "type":"link_list",
+                "name":"Demo",
+                "settings":[
+                    {
+                    "type": "image_picker",
+                    "id":"image",
+                    "label":"logo"
+                    },
+                    {
+                    "type": "text",
+                    "id":"content",
+                    "default": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
+                    "label":"text content"
+                    }
+                ]
+            }
+        ],
+        "presets":[
+            {
+                "name":"home_multicolumn"
+            }
+        ]
+    }
+{% endschema %}
