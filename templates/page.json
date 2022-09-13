@@ -11,11 +11,11 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "bags-1",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
