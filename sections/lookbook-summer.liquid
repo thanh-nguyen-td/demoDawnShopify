@@ -1,12 +1,12 @@
 {{"lookbook-summer.css" | asset_url | stylesheet_tag}}
 <div class="summer-container page-width {% if section.settings.img_left == true %}left-two {% else %}right-two{% endif %}">
     {% if section.settings.img_1 != blank %}
-    <img src="{{section.settings.img_1| img_url}}" class="img-1"/>
+    <img src="{{section.settings.img_1| img_url:'large'}}" class="img-1"/>
     {% else %}
         {{'image' | placeholder_svg_tag: 'img-1'}}
     {% endif %}
     {% if section.settings.img_2 != blank %}
-    <img src="{{section.settings.img_2 | img_url}}" class="img-2"/>
+    <img src="{{section.settings.img_2 | img_url:'large'}}" class="img-2"/>
     {% else %}
         {{'image' | placeholder_svg_tag: 'img-2'}}
     {% endif %}
