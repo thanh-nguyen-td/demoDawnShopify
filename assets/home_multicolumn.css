@@ -1,3 +1,30 @@
-.demo{
-    color:red
+.home-multicolumn-container{
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+.row-1{
+    grid-template-columns: 1fr;
+}
+.row-2{
+    grid-template-columns: 1fr 1fr;
+}
+.row-3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.row-4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.home-multicolumn-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.wrap-card .custom-img{
+    height: 30px;
+}
+.wrap-card .text-content {
+    margin-top: 15px;
 }
