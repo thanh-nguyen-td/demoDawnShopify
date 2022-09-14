@@ -5,11 +5,22 @@
     {% else %}
         {{'image' | placeholder_svg_tag: 'img-1'}}
     {% endif %}
-    {% if section.settings.img_2 != blank %}
-    <img src="{{section.settings.img_2 | img_url:'large'}}" class="img-2"/>
+    {% if section.settings.check_url != blank %}
+       <a href="{{section.settings.check_url}}">
+            {% if section.settings.img_2 != blank %}
+            <img src="{{section.settings.img_2 | img_url:'large'}}" class="img-2"/>
+            {% else %}
+                {{'image' | placeholder_svg_tag: 'img-2'}}
+            {% endif %}
+       </a>
     {% else %}
-        {{'image' | placeholder_svg_tag: 'img-2'}}
+        {% if section.settings.img_2 != blank %}
+        <img src="{{section.settings.img_2 | img_url:'large'}}" class="img-2"/>
+        {% else %}
+            {{'image' | placeholder_svg_tag: 'img-2'}}
+        {% endif %}
     {% endif %}
+   
     
 </div>
 {% schema %}
@@ -28,6 +39,11 @@
            "id":"img_1",
            "label":"image 1"
         },
+        {
+            "type": "url",
+            "id":"check_url",
+            "label":"link img"
+         },
         {
             "type": "image_picker",
             "id":"img_2",
