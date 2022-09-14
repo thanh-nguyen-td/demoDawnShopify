@@ -161,7 +161,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "menu": "footer"
+              "menu": "head-menu-dawn"
             }
           },
           "footer-1": {
