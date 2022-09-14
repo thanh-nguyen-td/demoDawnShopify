@@ -165,10 +165,18 @@
             "chon_anh": "shopify:\/\/shop_images\/Dawn_logo_90x_2x_4cb73e02-716b-41b2-8901-a595b80ab377.webp",
             "content": "The leather is sourced from environmentally friendly tanneries in Italy, France, and Turkey, where Rure is based and everything is assembled by hand."
           }
+        },
+        "2e576370-5228-4186-9288-49a507849cca": {
+          "type": "image",
+          "settings": {
+            "chon_anh": "shopify:\/\/shop_images\/Dawn_logo_90x_2x_4cb73e02-716b-41b2-8901-a595b80ab377.webp",
+            "content": "The leather is sourced from environmentally friendly tanneries in Italy, France, and Turkey, where Rure is based and everything is assembled by hand."
+          }
         }
       },
       "block_order": [
-        "06b1f56f-34d9-4363-b4c9-405bf5ab0191"
+        "06b1f56f-34d9-4363-b4c9-405bf5ab0191",
+        "2e576370-5228-4186-9288-49a507849cca"
       ],
       "settings": {
         "title": "day la ban demo",
