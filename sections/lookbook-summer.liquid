@@ -1,0 +1,36 @@
+<div>
+    {% if section.settings.img_1 != blank %}
+    <img src="{{section.settings.img_1}} | img_url"/>
+    {% else %}
+        {{'image' | placeholder_svg_tag: 'placeholder-svg'}}
+    {% endif %}
+    {% if section.settings.img_2 != blank %}
+    <img src="{{section.settings.img_2}} | img_url"/>
+    {% else %}
+        {{'image' | placeholder_svg_tag: 'placeholder-svg'}}
+    {% endif %}
+    
+</div>
+{% schema %}
+{
+    "name":"list-img-lookbook",
+    "tag":"section",
+   "settings": [
+        {
+           "type": "image_picker",
+           "id":"img_1",
+           "label":"image 1"
+        },
+        {
+            "type": "image_picker",
+            "id":"img_2",
+            "label":"image 2"
+         }
+   ],
+  "presets": [
+    {
+        "name":"list img lookbook"
+    }
+  ]
+}
+{% endschema %}
