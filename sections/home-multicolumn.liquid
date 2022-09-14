@@ -3,13 +3,7 @@
     thanh
     <div>{{section.settings.title}}</div>
    {% for block in section.blocks %}
-         <div style="color:red">haha</div>
-        <!-- {% assign item = block.settings %}
-        {% if block.type == "link_list" %}
-            <div>
-                <div>{{item.content}}</div>
-            </div>
-        {% endif %} -->
+     <img src="{{block.settings.chon_anh | img_url: 'medium'}}" />
    {% endfor %}
 </div>
 
