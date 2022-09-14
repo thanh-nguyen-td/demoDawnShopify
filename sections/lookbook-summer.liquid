@@ -1,13 +1,14 @@
-<div>
+{{"lookbook-summer.css" | asset_url | stylesheet_tag}}
+<div class="summer-container page-width {% if section.settings.img_left == true %}left-two {% else %}right-two{% endif %}">
     {% if section.settings.img_1 != blank %}
-    <img src="{{section.settings.img_1}} | img_url"/>
+    <img src="{{section.settings.img_1}} | img_url" class="img-1"/>
     {% else %}
-        {{'image' | placeholder_svg_tag: 'placeholder-svg'}}
+        {{'image' | placeholder_svg_tag: 'img-1'}}
     {% endif %}
     {% if section.settings.img_2 != blank %}
     <img src="{{section.settings.img_2}} | img_url"/>
     {% else %}
-        {{'image' | placeholder_svg_tag: 'placeholder-svg'}}
+        {{'image' | placeholder_svg_tag: 'img-2'}}
     {% endif %}
     
 </div>
@@ -16,6 +17,12 @@
     "name":"list-img-lookbook",
     "tag":"section",
    "settings": [
+        {
+            "type": "checkbox",
+            "id":"img_left",
+            "default":true,
+            "label":"left big"
+        },
         {
            "type": "image_picker",
            "id":"img_1",
