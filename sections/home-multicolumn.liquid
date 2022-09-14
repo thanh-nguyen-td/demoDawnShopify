@@ -1,32 +1,55 @@
 {{"home_multicolumn.css" | asset_url | stylesheet_tag}}
-<div class="demo">thanh kaka</div>
+<div class="demo">
+    thanh
+    <div>{{section.settings.title}}</div>
+   {% for block in section.blocks %}
+         <div style="color:red">haha</div>
+        <!-- {% assign item = block.settings %}
+        {% if block.type == "link_list" %}
+            <div>
+                <div>{{item.content}}</div>
+            </div>
+        {% endif %} -->
+   {% endfor %}
+</div>
 
 {% schema %}
     {
         "name":"home_multicolumn",
         "tag":"section",
-        "blocks":[
+        "settings":[
             {
-                "type":"link_list",
-                "name":"Demo",
-                "settings":[
-                    {
-                    "type": "image_picker",
-                    "id":"image",
-                    "label":"logo"
-                    },
-                    {
-                    "type": "text",
-                    "id":"content",
-                    "default": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.",
-                    "label":"text content"
-                    }
-                ]
+                "type":"text",
+                "id":"title",
+                "default":"day la ban demo",
+                "label":"title"
+            },
+            {
+                "type":"range",
+                "id":"row_num",
+                "default":2,
+                "min":2,
+                "max":4,
+                "label":"Number of Column"
             }
+        ],
+        "blocks":[
+           {
+            "type":"image",
+            "name":"image block",
+            "settings":[
+                {
+                    "type":"image_picker",
+                    "id":"chon_anh",
+                    "label":"chonanh"
+                }
+            ]
+           }
         ],
         "presets":[
             {
                 "name":"home_multicolumn"
+             
             }
         ]
     }
