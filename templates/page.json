@@ -2,9 +2,15 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "1663127966439ddfca": {
+      "type": "lookbook-summer",
+      "settings": {
       }
     },
     "1663053690e20b417f": {
@@ -37,6 +43,7 @@
   },
   "order": [
     "main",
+    "1663127966439ddfca",
     "1663053690e20b417f"
   ]
 }
