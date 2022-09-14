@@ -4,6 +4,7 @@
     <div>{{section.settings.title}}</div>
    {% for block in section.blocks %}
      <img src="{{block.settings.chon_anh | img_url: 'medium'}}" />
+     <div>{{block.settings.content}}</div>
    {% endfor %}
 </div>
 
@@ -36,6 +37,12 @@
                     "type":"image_picker",
                     "id":"chon_anh",
                     "label":"chonanh"
+                },
+                {
+                    "type":"text",
+                    "id":"content",
+                    "default":"The leather is sourced from environmentally friendly tanneries in Italy, France, and Turkey, where Rure is based and everything is assembled by hand.",
+                    "label":"text content"
                 }
             ]
            }
