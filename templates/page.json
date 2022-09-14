@@ -13,6 +13,7 @@
       "settings": {
         "img_left": true,
         "img_1": "shopify:\/\/shop_images\/beige_1100x_1100x_d8941c67-8f25-4820-8973-209550bc06b5.webp",
+        "check_url": "",
         "img_2": "shopify:\/\/shop_images\/mlouye-helix-sand-banner-mobile-l1_720x_720x_d968f35a-e316-431d-bc4a-5d58ed2ebf88.webp"
       }
     },
@@ -25,10 +26,10 @@
         "show_description": false,
         "description_style": "body",
         "collection": "bags-1",
-        "products_to_show": 4,
+        "products_to_show": 8,
         "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
+        "full_width": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
